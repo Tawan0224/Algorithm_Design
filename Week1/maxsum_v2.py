@@ -5,14 +5,14 @@
 import time
 start = time.process_time()
 
-def accumulated(x): #Find how to calculate prefix sum from "https://www.geeksforgeeks.org/dsa/prefix-sum-array-implementation-applications-competitive-programming/"
+def accumulated(x):
     accu = [0] * len(x) #Fill a new list with zeros
     accu[0] = x[0] #Just copy the first element
     for i in range(1, len(x)):
         accu[i] = accu[i-1] + x[i]
     return accu
 
-def Sum(acc, i, j): #Used Calude to learn why acc[j] - acc[i-1] gives the sum from index i to j.
+def Sum(acc, i, j):
     if i == 0: #Just return the value from index j
         return acc[j]
     else:

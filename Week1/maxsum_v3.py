@@ -5,7 +5,7 @@
 import time
 start = time.process_time()
 
-def kadane(arr): #Used GPT to understand Kadane's algorithm
+def kadane(arr):
     current_sum = arr[0]
     max_sum = arr[0]
 
