@@ -2,6 +2,7 @@
 #6611938
 #541
 
+import time
 FLAT = 0
 UPPER2 = 1
 LOWER2 = 2
@@ -27,4 +28,8 @@ for d in range(L-1, -1, -1):
     if d < L-1:
         dp[d][LOWER2] += dp[d+2][LOWER2]
 
+start = time.process_time()
 print(dp[0][FLAT])
+end = time.process_time()
+
+print("running_time = ", end-start)
