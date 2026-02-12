@@ -43,7 +43,7 @@ def kruskal(V, edges):
             sets -= 1
             if sets == 1:
                 break
-
+ 
     return mst_weight
 
 V, E = map(int, input().split())
